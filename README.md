@@ -34,7 +34,9 @@ Tournaments has a one to one relationship with PrizePool because one tournament 
 
 The last part of the data model is a many to many relationship with tournament to venues to show where locations of the available are loacted. The assocative entity, TournamentVenue, shows the location and time of when the specific tournament will take place at.
 
-<img width="960" height="1190" alt="image" src="https://github.com/user-attachments/assets/b8a31c6e-0656-4aec-9ecd-c07d14cec222" />
+
+<img width="951" height="883" alt="image" src="https://github.com/user-attachments/assets/91206756-b557-4915-aeab-2788be009fe5" />
+
 
 ## Data Dictionary
 |Column|Desc|Data Type|Role|
@@ -162,11 +164,11 @@ Complex Query #3 lets tournament managers to clearly see which venues are suitab
 
 Complex Query #4 allows tournament managers to clearly categorize their sponsors by the contributions that they make to each tournament. As a result, they can take this information and be able to roughly guess what they expect from each sponsor in future tournaments, helping them establish a prize pool. Additionally, they can clearly pinpoint which sponsors clearly have ample funds, allowing them to determine which sponsors to approach when in need of more funds. Finally, by establishing a tier system, this motivates the sponsors to want to donate more money in order to increase their sponsorship tier status.
 
-5) Complex Query #5 uses a left join on the Players and Teams tables to return a list of all teams with their player count. It sorts it all with a group by and puts it in order depending on which teams have a higher or lower player count.
-<img width="1575" height="797" alt="image" src="https://github.com/user-attachments/assets/f15dc656-d11a-4ca3-b99e-3ae83b60fd89" />
+5) Complex Query #5 What teams have an above average win rate and what is their total prize pool amount?
+<img width="1366" height="780" alt="image" src="https://github.com/user-attachments/assets/49411331-d9d9-4414-9ff0-45268218c424" />
 
-Complex Query #5 allows tournament managers to check the total count of players easily, by simply adding up all the teams' player count. It helps keep them organized as well as do attendence much quicker.
 
+Complex Query #5 shows the teams that are doing the best based on their win rates, which correlates with an increase in their prize pool money. This result can be beneficial to understanding the best teams in the league and showing how much money they earned. This can help sponsors decide if they want to invest in the teams, showing how well the teams are doing relative to other teams that are performing well.
 
 6) Simple Query #6 uses multiple joins to lists the teams that has a sponsorROI greater than 1.5
 <img width="1070" height="856" alt="image" src="https://github.com/user-attachments/assets/60aa9d29-6cf7-4d02-9d68-25c8f0b1f5a1" />
